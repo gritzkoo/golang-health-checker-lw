@@ -15,4 +15,4 @@ jobs:
         with:
           go-version: ${{ matrix.go }}
       - name: build package
-        run: make build
+        run: CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o healthchecker pkg/**/*.go
