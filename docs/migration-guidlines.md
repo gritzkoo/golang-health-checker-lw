@@ -15,7 +15,7 @@ import (
 
     "github.com/go-redis/redis" // assuming you are using this package
 
-    "github.com/gritzkoo/healthchecker.v1/pkg/healthchecker"
+    "github.com/gritzkoo/golang-health-checker-lw/pkg/healthchecker"
 )
 
 func RedisTest() healthchecker.CheckResponse {
@@ -48,7 +48,7 @@ package yourmemcache
 import (
     "github.com/bradfitz/gomemcache/memcache" // assuming you are using this package
 
-    "github.com/gritzkoo/healthchecker.v1/pkg/healthchecker"
+    "github.com/gritzkoo/golang-health-checker-lw/pkg/healthchecker"
 
 )
 
@@ -75,7 +75,7 @@ import (
     "yourmodname/yourredis" // here goes the name where you declared the Redis Handle function
     "yourmodname/yourmemcache" // here goes the name where you declared the memcached Handle function
 
-    "github.com/gritzkoo/healthchecker.v1/pkg/healthchecker"
+    "github.com/gritzkoo/golang-health-checker-lw/pkg/healthchecker"
 )
 
 var checker = healthchecker.New(healthchecker.Config{

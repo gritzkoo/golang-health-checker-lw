@@ -39,7 +39,7 @@ import (
   "fmt"
   "net/http"
 
-  "github.com/gritzkoo/healthchecker.v1/pkg/healthchecker"
+  "github.com/gritzkoo/golang-health-checker-lw/pkg/healthchecker"
 )
 // declaring a function that will test somenting
 // this example test a http request calling
