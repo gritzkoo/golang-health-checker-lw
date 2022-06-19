@@ -19,7 +19,9 @@ jobs:
         with:
           go-version: ${{ matrix.go }}
       - name: test application
-        run: make test
+        run: |
+          ls -lRa
+          make test
       - name: Send coverage to coverall.io
         uses: shogo82148/actions-goveralls@v1
         with:
