@@ -63,6 +63,8 @@ type CheckResponse struct {
 				Error: &MyCustomError{Message: "something got wrong!", Code: 9999},
 			}
 		}
+
+
 	*/
 	Error error `json:"error,omitempty"`
 	// Use this URL field to expose the host of your test to make simple
@@ -88,10 +90,9 @@ type Config struct {
 
 		Using in the healthchecker.New example:
 
-		version, err := ioutil.ReadFile("revision.txt")
-		if err != nil {
-			version = []byte{}
-		}
+		version,_ := ioutil.ReadFile("revision.txt")
+
+
 		var check = healthchecker.New(healthchecker.Config{
 			Version: string(version)
 		})

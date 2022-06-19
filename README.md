@@ -6,7 +6,10 @@
 [![CodeQL](https://github.com/gritzkoo/golang-health-checker-lw/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)](https://github.com/gritzkoo/golang-health-checker-lw/actions/workflows/codeql-analysis.yml)
 [![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/gritzkoo/golang-health-checker-lw)](https://img.shields.io/github/go-mod/go-version/gritzkoo/golang-health-checker-lw)
 ![GitHub repo size](https://img.shields.io/github/repo-size/gritzkoo/golang-health-checker-lw)
-
+[![Go Reference](https://pkg.go.dev/badge/github.com/gritzkoo/golang-health-checker-lw.svg)](https://pkg.go.dev/github.com/gritzkoo/golang-health-checker-lw)
+![GitHub issues](https://img.shields.io/github/issues-raw/gritzkoo/golang-health-checker-lw)
+![GitHub Release Date](https://img.shields.io/github/release-date/gritzkoo/golang-health-checker-lw)
+![GitHub](https://img.shields.io/github/license/gritzkoo/golang-health-checker-lw)
 ___
 
 ## Welcome!
