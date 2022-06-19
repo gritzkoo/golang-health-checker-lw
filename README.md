@@ -4,12 +4,14 @@
 [![build](https://github.com/gritzkoo/golang-health-checker-lw/actions/workflows/block.yaml/badge.svg)](https://github.com/gritzkoo/golang-health-checker-lw/actions/workflows/block.yaml)
 [![Coverage Status](https://coveralls.io/repos/github/gritzkoo/golang-health-checker-lw/badge.svg?branch=main)](https://coveralls.io/github/gritzkoo/golang-health-checker-lw?branch=main)
 [![CodeQL](https://github.com/gritzkoo/golang-health-checker-lw/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)](https://github.com/gritzkoo/golang-health-checker-lw/actions/workflows/codeql-analysis.yml)
+![GitHub](https://img.shields.io/github/license/gritzkoo/golang-health-checker-lw)
+[![Go Reference](https://pkg.go.dev/badge/github.com/gritzkoo/golang-health-checker-lw.svg)](https://pkg.go.dev/github.com/gritzkoo/golang-health-checker-lw)
 [![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/gritzkoo/golang-health-checker-lw)](https://img.shields.io/github/go-mod/go-version/gritzkoo/golang-health-checker-lw)
 ![GitHub repo size](https://img.shields.io/github/repo-size/gritzkoo/golang-health-checker-lw)
-[![Go Reference](https://pkg.go.dev/badge/github.com/gritzkoo/golang-health-checker-lw.svg)](https://pkg.go.dev/github.com/gritzkoo/golang-health-checker-lw)
+[![Go Report Card](https://goreportcard.com/badge/github.com/gritzkoo/golang-health-checker-lw)](https://goreportcard.com/report/github.com/gritzkoo/golang-health-checker-lw)
 ![GitHub issues](https://img.shields.io/github/issues-raw/gritzkoo/golang-health-checker-lw)
 ![GitHub Release Date](https://img.shields.io/github/release-date/gritzkoo/golang-health-checker-lw)
-![GitHub](https://img.shields.io/github/license/gritzkoo/golang-health-checker-lw)
+
 ___
 
 ## Welcome!
@@ -25,14 +27,14 @@ ___
 ## How can I install this package?
 
 ```sh
-go get github.com/gritzkoo/golang-health-checker-lw.v1
+go get github.com/gritzkoo/golang-health-checker-lw
 ```
 
 ## How can I use this package?
 
 You can actually test any kind of thing, you just need to declare a function in your application that returns a `healthchecker.CheckResponse` struct and `DONE!`
 
-Below is an `example` of **_HOW TO_** create a `Handle` function to inject in this package.
+Below is an `example` of **_HOW TO_** create a `Handle` function to inject into this package.
 
 ```go
 package main
@@ -102,6 +104,7 @@ func main() {
   http.ListenAndServe(":8090", nil)
 }
 ```
+
 ___
 
 ## Migration guidelines
