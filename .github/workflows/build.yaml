@@ -1,0 +1,22 @@
+name: build
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        go: ["1.18"]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: setup go server
+        uses: actions/setup-go@v1
+        with:
+          go-version: ${{ matrix.go }}
+      - name: build package
+        run: make build

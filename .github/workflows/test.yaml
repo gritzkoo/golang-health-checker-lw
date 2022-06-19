@@ -1,0 +1,53 @@
+name: test
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        go: ["1.18"]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: setup go server
+        uses: actions/setup-go@v1
+        with:
+          go-version: ${{ matrix.go }}
+      - name: test application
+        run: |
+          ls -lRa
+          make test
+      - name: Send coverage to coverall.io
+        uses: shogo82148/actions-goveralls@v1
+        with:
+          path-to-profile: profile.cov
+          flag-name: Go-${{ matrix.go }}
+          parallel: true
+          # notifies that all test jobs are finished.
+
+  finish:
+    name: Send coverage to Coverall.io
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: shogo82148/actions-goveralls@v1
+        with:
+          parallel-finished: true
+
+  release-on-push:
+    runs-on: ubuntu-latest
+    needs:
+      - test
+      - finish
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: rymndhng/release-on-push-action@master
+        with:
+          bump_version_scheme: patch
