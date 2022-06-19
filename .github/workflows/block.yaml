@@ -1,5 +1,9 @@
 name: build
-on: [pull_request]
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -8,11 +12,11 @@ jobs:
       matrix:
         go: ["1.18"]
     steps:
-      - name: checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
-      - name: setup go
+      - name: setup go server
         uses: actions/setup-go@v1
         with:
           go-version: ${{ matrix.go }}
       - name: build package
-        run: CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o healthchecker pkg/**/*.go
+        run: make build
