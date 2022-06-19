@@ -36,7 +36,13 @@ func RedisTest () healthchecker.CheckResponse {
     }
     return result
 }
----
+```
+
+## Defining a memcache handle function
+
+In your app/pkg where you set your memcache context declare a function like below:
+
+```go
 package yourmemcache
 
 import (
@@ -54,9 +60,11 @@ func MemcacheTest() healthchecker.CheckResponse{
     result.Error = mcClient.Ping()
     return result
 }
+```
 
----
+## Then create a healthchecker actor and replace in you http interface
 
+``` go
 package main
 
 import (
@@ -76,11 +84,11 @@ var checker = healthchecker.New(healthchecker.Config{
     Integrations: []healthchecker.Check{
         {
             Name:   "My redis integration",
-            Handle: yourredis.RedisTest,
+            Handle: yourredis.RedisTest, // invoke your function
         },
         {
             Name:   "My memcache integration",
-            Handle: yourmemcache.MemcacheTest,
+            Handle: yourmemcache.MemcacheTest, // invoke your function
         },
     },
 })
@@ -91,7 +99,13 @@ func main() {
         w.Write(resp)
     })
     http.HandleFunc("/health-check/readiness", func(w http.ResponseWriter, r *http.Request) {
-        resp, _ := json.MarshalIndent(checker.Readiness(), "", "  ")
+        check := checker.Readiness()
+        if !check.Status {
+            // do something like write some log or call
+            // other service passing full information
+            // to handle this issue
+        }
+        resp, _ := json.MarshalIndent(check, "", "  ")
         w.Header().Add("Content-type", "application/json")
         w.Write(resp)
     })
