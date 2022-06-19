@@ -101,6 +101,6 @@ func main() {
 ```
 ___
 
-## Migration guide lines
+## Migration guidelines
 
 You will find all information you need in [THIS DOC](./docs/migration-guidlines.md)
