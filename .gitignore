@@ -2,3 +2,4 @@ coverage.out
 profile.cov
 ./healthchecker
 .vscode
+main.go
