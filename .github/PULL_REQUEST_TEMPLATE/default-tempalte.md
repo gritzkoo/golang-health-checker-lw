@@ -1,4 +1,4 @@
-## What this PR do?
+## What does this PR do?
 
 <!-- Describe what this PR is doing -->
 
@@ -14,6 +14,6 @@
 - [ ] Minor
 - [ ] Patch
 
-## Other informations
+## Other pieces of information
 
 <!-- Place more information if you need -->
