@@ -29,63 +29,78 @@ go get github.com/gritzkoo/golang-health-checker-lw.v1
 
 You can actually test any kind of thing, you just need to declare a function in your application that returns a `healthchecker.CheckResponse` struct and `DONE!`
 
-Below are some examples of ***_HOW TO_***
+Below is an `example` of **_HOW TO_** create a `Handle` function to inject in this package.
 
 ```go
 package main
 
 import (
-	"encoding/json"
-	"fmt"
-	"net/http"
+  "encoding/json"
+  "fmt"
+  "net/http"
 
-	"github.com/gritzkoo/healthchecker.v1/pkg/healthchecker"
+  "github.com/gritzkoo/healthchecker.v1/pkg/healthchecker"
 )
-
+// declaring a function that will test somenting
+// this example test a http request calling
+// https://github.com/status to check if GitHub is up and running
 func TestMyApi() healthchecker.CheckResponse {
-	result := healthchecker.CheckResponse{
-		URL: "http://github.com/status",
-	}
-	client := http.Client{}
-	request, err := http.NewRequest("GET", result.URL, nil)
-	if err != nil {
-		result.Error = err
-		return result
-	}
-	response, err := client.Do(request)
-	if err != nil {
-		result.Error = err
-		return result
-	}
-	if response.StatusCode != http.StatusOK {
-		result.Error = fmt.Errorf("The API returned a status code different of 200! code: %d", response.StatusCode)
-	}
-	return result
+  result := healthchecker.CheckResponse{
+    URL: "http://github.com/status",
+  }
+  client := http.Client{}
+  request, err := http.NewRequest("GET", result.URL, nil)
+  if err != nil {
+    result.Error = err
+    return result
+  }
+  response, err := client.Do(request)
+  if err != nil {
+    result.Error = err
+    return result
+  }
+  if response.StatusCode != http.StatusOK {
+    result.Error = fmt.Errorf("The API returned a status code different of 200! code: %d", response.StatusCode)
+  }
+  return result
 }
-
+// create a pointer with for your application of HealthChecker actor
+// to be used in your http interface
 var checker = healthchecker.New(healthchecker.Config{
-	Name:    "My app name",
-	Version: "v1.0.0", // or get it from some where and replace it here!
-	Integrations: []healthchecker.Check{
-		{
-			Name:   "Github integration",
-			Handle: TestMyApi,
-		},
-	},
+  Name:    "My app name", // optional parameter, should be your application name
+  Version: "v1.0.0", // or get it from some where and replace it here!
+  Integrations: []healthchecker.Check{ // the list of things you need to check
+    {
+      Name:   "Github integration",
+      Handle: TestMyApi,
+    },
+  },
 })
 
 func main() {
-	http.HandleFunc("/health-check/liveness", func(w http.ResponseWriter, r *http.Request) {
-		resp, _ := json.MarshalIndent(checker.Liveness(), "", "  ")
-		w.Header().Add("Content-type", "application/json")
-		w.Write(resp)
-	})
-	http.HandleFunc("/health-check/readiness", func(w http.ResponseWriter, r *http.Request) {
-		resp, _ := json.MarshalIndent(checker.Readiness(), "", "  ")
-		w.Header().Add("Content-type", "application/json")
-		w.Write(resp)
-	})
-	http.ListenAndServe(":8090", nil)
+  // declaring a endpoint to liveness
+  http.HandleFunc("/health-check/liveness", func(w http.ResponseWriter, r *http.Request) {
+    resp, _ := json.MarshalIndent(checker.Liveness(), "", "  ")
+    w.Header().Add("Content-type", "application/json")
+    w.Write(resp)
+  })
+  // declaring a endpoint to readiness
+  http.HandleFunc("/health-check/readiness", func(w http.ResponseWriter, r *http.Request) {
+    check := checker.Readiness()
+    if !check.Status {
+      // do something like write some log or call
+      // other service passing full information
+      // to handle this issue
+    }
+    resp, _ := json.MarshalIndent(check, "", "  ")
+    w.Header().Add("Content-type", "application/json")
+    w.Write(resp)
+  })
+  http.ListenAndServe(":8090", nil)
 }
-
 ```
+___
+
+## Migration guide lines
+
+You will find all information you need in [THIS DOC](./docs/migration-guidlines.md)

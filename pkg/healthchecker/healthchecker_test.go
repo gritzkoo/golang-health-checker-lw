@@ -135,7 +135,7 @@ func TestHealthCheck_Readiness(t *testing.T) {
 				Name:    configSetup3.Name,
 				Version: configSetup3.Version,
 				Status:  true,
-				Integrations: []integration{
+				Integrations: []Integration{
 					{
 						Name: configSetup3.Integrations[0].Name,
 					},
