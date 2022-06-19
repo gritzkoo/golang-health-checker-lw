@@ -18,7 +18,7 @@ import (
     "github.com/gritzkoo/healthchecker.v1/pkg/healthchecker"
 )
 
-func RedisTest () healthchecker.CheckResponse {
+func RedisTest() healthchecker.CheckResponse {
     result := healthchecker.CheckResponse{
         URL: "host-to-my-redis-instance:port"
     }
