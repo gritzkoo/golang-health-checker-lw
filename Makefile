@@ -8,3 +8,5 @@ view-docs:
 	godoc -http=:8331
 run:
 	go run main.go
+install-godoc:
+	go install golang.org/x/tools/cmd/godoc@latest

@@ -1,11 +1,11 @@
 name: traffic2badge
 on:
-  - workflow_dispatch
-  - push
-  #   branches:
-  #     - main
-  # schedule:
-  #   - cron: '* * * * *' #UTC
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '1 0 * * *' #UTC
 
 jobs:
   run:
