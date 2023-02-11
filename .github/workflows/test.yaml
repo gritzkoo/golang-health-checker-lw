@@ -49,5 +49,18 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: rymndhng/release-on-push-action@master
+        id: release_package
         with:
           bump_version_scheme: patch
+      - name: setup go server
+        uses: actions/setup-go@v1
+        with:
+          go-version: "1.19"
+      - name: update go.pkg.dev
+        env:
+          GOPROXY: https://proxy.golang.org
+          GO111MODULE: "on"
+          VERSION: ${{steps.release_package.outputs.version}}
+        run: |
+          go mod init pipeline
+          go get github.com/gritzkoo/golang-health-checker-lw@${VERSION}
