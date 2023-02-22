@@ -14,8 +14,8 @@
   {
     "path": "/gritzkoo/golang-health-checker-lw/tree/main/pkg/healthchecker",
     "title": "golang-health-checker-lw/pkg/healthchecker at main · gritzkoo/golang-health-c...",
-    "count": 6,
-    "uniques": 3
+    "count": 5,
+    "uniques": 2
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/actions/workflows/build.yaml",
@@ -36,18 +36,6 @@
     "uniques": 1
   },
   {
-    "path": "/gritzkoo/golang-health-checker-lw/blob/main/pkg/healthchecker/healthchecker.go",
-    "title": "golang-health-checker-lw/healthchecker.go at main · gritzkoo/golang-health-ch...",
-    "count": 3,
-    "uniques": 3
-  },
-  {
-    "path": "/gritzkoo/golang-health-checker-lw/blob/main/pkg/healthchecker/structs.go",
-    "title": "golang-health-checker-lw/structs.go at main · gritzkoo/golang-health-checker-lw",
-    "count": 3,
-    "uniques": 3
-  },
-  {
     "path": "/gritzkoo/golang-health-checker-lw/actions/runs/4147165713",
     "title": "go · gritzkoo/golang-health-checker-lw@ae972cc",
     "count": 3,
@@ -58,5 +46,17 @@
     "title": "Actions · gritzkoo/golang-health-checker-lw",
     "count": 3,
     "uniques": 1
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw/pulls",
+    "title": "Pull requests · gritzkoo/golang-health-checker-lw",
+    "count": 3,
+    "uniques": 1
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw/blob/main/pkg/healthchecker/healthchecker.go",
+    "title": "golang-health-checker-lw/healthchecker.go at main · gritzkoo/golang-health-ch...",
+    "count": 2,
+    "uniques": 2
   }
 ]
