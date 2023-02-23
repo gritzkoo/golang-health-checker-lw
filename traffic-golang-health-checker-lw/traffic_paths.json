@@ -2,20 +2,14 @@
   {
     "path": "/gritzkoo/golang-health-checker-lw",
     "title": "gritzkoo/golang-health-checker-lw: Golang health checker package",
-    "count": 18,
-    "uniques": 6
+    "count": 20,
+    "uniques": 8
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/actions",
     "title": "Actions · gritzkoo/golang-health-checker-lw",
     "count": 9,
     "uniques": 1
-  },
-  {
-    "path": "/gritzkoo/golang-health-checker-lw/tree/main/pkg/healthchecker",
-    "title": "golang-health-checker-lw/pkg/healthchecker at main · gritzkoo/golang-health-c...",
-    "count": 5,
-    "uniques": 2
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/actions/workflows/build.yaml",
@@ -54,9 +48,15 @@
     "uniques": 1
   },
   {
-    "path": "/gritzkoo/golang-health-checker-lw/blob/main/pkg/healthchecker/healthchecker.go",
-    "title": "golang-health-checker-lw/healthchecker.go at main · gritzkoo/golang-health-ch...",
+    "path": "/gritzkoo/golang-health-checker-lw/tree/main/pkg/healthchecker",
+    "title": "golang-health-checker-lw/pkg/healthchecker at main · gritzkoo/golang-health-c...",
+    "count": 3,
+    "uniques": 1
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw/actions/runs/4147155656",
+    "title": "Feature/include traffic to badge · gritzkoo/golang-health-checker-lw@914bf84",
     "count": 2,
-    "uniques": 2
+    "uniques": 1
   }
 ]
