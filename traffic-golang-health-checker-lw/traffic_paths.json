@@ -2,48 +2,12 @@
   {
     "path": "/gritzkoo/golang-health-checker-lw",
     "title": "gritzkoo/golang-health-checker-lw: Golang health checker package",
-    "count": 20,
+    "count": 13,
     "uniques": 8
-  },
-  {
-    "path": "/gritzkoo/golang-health-checker-lw/actions",
-    "title": "Actions · gritzkoo/golang-health-checker-lw",
-    "count": 9,
-    "uniques": 1
-  },
-  {
-    "path": "/gritzkoo/golang-health-checker-lw/actions/workflows/build.yaml",
-    "title": "Actions · gritzkoo/golang-health-checker-lw",
-    "count": 4,
-    "uniques": 1
-  },
-  {
-    "path": "/gritzkoo/golang-health-checker-lw/actions/workflows/test.yaml",
-    "title": "Actions · gritzkoo/golang-health-checker-lw",
-    "count": 4,
-    "uniques": 1
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/pull/2",
     "title": "Feature/include traffic to badge by gritzkoo · Pull Request #2 · gritzkoo/gol...",
-    "count": 4,
-    "uniques": 1
-  },
-  {
-    "path": "/gritzkoo/golang-health-checker-lw/actions/runs/4147165713",
-    "title": "go · gritzkoo/golang-health-checker-lw@ae972cc",
-    "count": 3,
-    "uniques": 1
-  },
-  {
-    "path": "/gritzkoo/golang-health-checker-lw/actions/workflows/block.yaml",
-    "title": "Actions · gritzkoo/golang-health-checker-lw",
-    "count": 3,
-    "uniques": 1
-  },
-  {
-    "path": "/gritzkoo/golang-health-checker-lw/pulls",
-    "title": "Pull requests · gritzkoo/golang-health-checker-lw",
     "count": 3,
     "uniques": 1
   },
@@ -54,9 +18,45 @@
     "uniques": 1
   },
   {
-    "path": "/gritzkoo/golang-health-checker-lw/actions/runs/4147155656",
-    "title": "Feature/include traffic to badge · gritzkoo/golang-health-checker-lw@914bf84",
+    "path": "/gritzkoo/golang-health-checker-lw/actions",
+    "title": "Actions · gritzkoo/golang-health-checker-lw",
     "count": 2,
+    "uniques": 1
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw/actions/workflows/build.yaml",
+    "title": "Actions · gritzkoo/golang-health-checker-lw",
+    "count": 2,
+    "uniques": 1
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw/pulls",
+    "title": "Pull requests · gritzkoo/golang-health-checker-lw",
+    "count": 2,
+    "uniques": 1
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw/actions/runs/4148709834",
+    "title": "Feature/include traffic to badge (#2) · gritzkoo/golang-health-checker-lw@1b0...",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw/actions/runs/4148709834/jobs/7176979215",
+    "title": "Feature/include traffic to badge (#2) · gritzkoo/golang-health-checker-lw@1b0...",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw/actions/workflows/block.yaml",
+    "title": "Actions · gritzkoo/golang-health-checker-lw",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw/actions/workflows/test.yaml",
+    "title": "Actions · gritzkoo/golang-health-checker-lw",
+    "count": 1,
     "uniques": 1
   }
 ]
