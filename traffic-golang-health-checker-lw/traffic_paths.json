@@ -2,14 +2,8 @@
   {
     "path": "/gritzkoo/golang-health-checker-lw",
     "title": "gritzkoo/golang-health-checker-lw: Golang health checker package",
-    "count": 13,
+    "count": 11,
     "uniques": 8
-  },
-  {
-    "path": "/gritzkoo/golang-health-checker-lw/pull/2",
-    "title": "Feature/include traffic to badge by gritzkoo · Pull Request #2 · gritzkoo/gol...",
-    "count": 3,
-    "uniques": 1
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/tree/main/pkg/healthchecker",
@@ -18,44 +12,14 @@
     "uniques": 1
   },
   {
-    "path": "/gritzkoo/golang-health-checker-lw/actions",
-    "title": "Actions · gritzkoo/golang-health-checker-lw",
-    "count": 2,
-    "uniques": 1
-  },
-  {
-    "path": "/gritzkoo/golang-health-checker-lw/actions/workflows/build.yaml",
-    "title": "Actions · gritzkoo/golang-health-checker-lw",
-    "count": 2,
-    "uniques": 1
-  },
-  {
-    "path": "/gritzkoo/golang-health-checker-lw/pulls",
-    "title": "Pull requests · gritzkoo/golang-health-checker-lw",
-    "count": 2,
-    "uniques": 1
-  },
-  {
-    "path": "/gritzkoo/golang-health-checker-lw/actions/runs/4148709834",
-    "title": "Feature/include traffic to badge (#2) · gritzkoo/golang-health-checker-lw@1b0...",
+    "path": "/gritzkoo/golang-health-checker-lw/blob/main/pkg/healthchecker/healthchecker.go",
+    "title": "golang-health-checker-lw/healthchecker.go at main · gritzkoo/golang-health-ch...",
     "count": 1,
     "uniques": 1
   },
   {
-    "path": "/gritzkoo/golang-health-checker-lw/actions/runs/4148709834/jobs/7176979215",
-    "title": "Feature/include traffic to badge (#2) · gritzkoo/golang-health-checker-lw@1b0...",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/gritzkoo/golang-health-checker-lw/actions/workflows/block.yaml",
-    "title": "Actions · gritzkoo/golang-health-checker-lw",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/gritzkoo/golang-health-checker-lw/actions/workflows/test.yaml",
-    "title": "Actions · gritzkoo/golang-health-checker-lw",
+    "path": "/gritzkoo/golang-health-checker-lw/blob/main/pkg/healthchecker/structs.go",
+    "title": "golang-health-checker-lw/structs.go at main · gritzkoo/golang-health-checker-...",
     "count": 1,
     "uniques": 1
   }
