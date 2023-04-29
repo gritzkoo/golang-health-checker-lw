@@ -2,14 +2,26 @@
   {
     "path": "/gritzkoo/golang-health-checker-lw",
     "title": "gritzkoo/golang-health-checker-lw: Golang health checker package",
-    "count": 9,
-    "uniques": 6
+    "count": 10,
+    "uniques": 7
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/tree/main/pkg/healthchecker",
     "title": "golang-health-checker-lw/pkg/healthchecker at main · gritzkoo/golang-health-c...",
+    "count": 4,
+    "uniques": 2
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw/blob/main/pkg/healthchecker/healthchecker_test.go",
+    "title": "golang-health-checker-lw/healthchecker_test.go at main · gritzkoo/golang-heal...",
     "count": 3,
-    "uniques": 1
+    "uniques": 2
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw/blob/main/pkg/healthchecker/healthchecker.go",
+    "title": "golang-health-checker-lw/healthchecker.go at main · gritzkoo/golang-health-ch...",
+    "count": 2,
+    "uniques": 2
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/blob/1b0342bc74e01fa08ebfb24cc3828608b8983510/pkg/healthchecker/structs.go",
@@ -18,14 +30,20 @@
     "uniques": 1
   },
   {
-    "path": "/gritzkoo/golang-health-checker-lw/blob/main/pkg/healthchecker/healthchecker_test.go",
-    "title": "golang-health-checker-lw/healthchecker_test.go at main · gritzkoo/golang-heal...",
-    "count": 2,
+    "path": "/gritzkoo/golang-health-checker-lw/blob/main/docs/migration-guidlines.md",
+    "title": "golang-health-checker-lw/migration-guidlines.md at main · gritzkoo/golang-hea...",
+    "count": 1,
     "uniques": 1
   },
   {
-    "path": "/gritzkoo/golang-health-checker-lw/blob/main/pkg/healthchecker/healthchecker.go",
-    "title": "golang-health-checker-lw/healthchecker.go at main · gritzkoo/golang-health-ch...",
+    "path": "/gritzkoo/golang-health-checker-lw/blob/main/pkg/healthchecker/structs.go",
+    "title": "golang-health-checker-lw/structs.go at main · gritzkoo/golang-health-checker-...",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw/tree/main/docs",
+    "title": "golang-health-checker-lw/docs at main · gritzkoo/golang-health-checker-lw · G...",
     "count": 1,
     "uniques": 1
   },
