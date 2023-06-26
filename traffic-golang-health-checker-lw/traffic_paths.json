@@ -6,16 +6,16 @@
     "uniques": 2
   },
   {
+    "path": "/gritzkoo/golang-health-checker-lw",
+    "title": "gritzkoo/golang-health-checker-lw: Golang health checker package",
+    "count": 4,
+    "uniques": 4
+  },
+  {
     "path": "/gritzkoo/golang-health-checker-lw/tree/1b0342bc74e01fa08ebfb24cc3828608b8983510/pkg/healthchecker",
     "title": "golang-health-checker-lw/pkg/healthchecker at 1b0342bc74e01fa08ebfb24cc382860...",
     "count": 4,
     "uniques": 1
-  },
-  {
-    "path": "/gritzkoo/golang-health-checker-lw",
-    "title": "gritzkoo/golang-health-checker-lw: Golang health checker package",
-    "count": 3,
-    "uniques": 3
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/tree/main/pkg/healthchecker",
