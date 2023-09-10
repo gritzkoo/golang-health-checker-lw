@@ -2,25 +2,31 @@
   {
     "path": "/gritzkoo/golang-health-checker-lw/blob/main/pkg/healthchecker/healthchecker_test.go",
     "title": "golang-health-checker-lw/pkg/healthchecker/healthchecker_test.go at main · gr...",
-    "count": 13,
-    "uniques": 1
-  },
-  {
-    "path": "/gritzkoo/golang-health-checker-lw/tree/main/pkg/healthchecker",
-    "title": "golang-health-checker-lw/pkg/healthchecker at main · gritzkoo/golang-health-c...",
-    "count": 11,
+    "count": 15,
     "uniques": 1
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/blob/main/pkg/healthchecker/healthchecker.go",
     "title": "golang-health-checker-lw/pkg/healthchecker/healthchecker.go at main · gritzko...",
-    "count": 10,
-    "uniques": 1
+    "count": 14,
+    "uniques": 2
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw/tree/main/pkg/healthchecker",
+    "title": "golang-health-checker-lw/pkg/healthchecker at main · gritzkoo/golang-health-c...",
+    "count": 13,
+    "uniques": 2
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw",
     "title": "gritzkoo/golang-health-checker-lw: Golang health checker package",
-    "count": 6,
-    "uniques": 3
+    "count": 7,
+    "uniques": 4
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw/blob/main/go.mod",
+    "title": "golang-health-checker-lw/go.mod at main · gritzkoo/golang-health-checker-lw",
+    "count": 2,
+    "uniques": 1
   }
 ]
