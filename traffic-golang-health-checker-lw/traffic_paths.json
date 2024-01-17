@@ -1,14 +1,14 @@
 [
   {
-    "path": "/gritzkoo/golang-health-checker-lw",
-    "title": "gritzkoo/golang-health-checker-lw: Golang health checker package",
-    "count": 2,
-    "uniques": 2
-  },
-  {
     "path": "/gritzkoo/golang-health-checker-lw/blob/main/docs/migration-guidlines.md",
     "title": "golang-health-checker-lw/docs/migration-guidlines.md at main · gritzkoo/golan...",
     "count": 2,
+    "uniques": 1
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw",
+    "title": "gritzkoo/golang-health-checker-lw: Golang health checker package",
+    "count": 1,
     "uniques": 1
   }
 ]
