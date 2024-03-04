@@ -29,9 +29,9 @@ jobs:
             var time = new Date(Date.now()).toISOString();
             core.info(time);
             return `Get traffic data at ${time}`;
-      - name: Get current year
-        id: date
-        run: echo "::set-output name=date::$(date +'%Y')"
+      # - name: Get current year
+      #   id: date
+      #   run: echo "::set-output name=date::$(date +'%Y')"
       - name: Set Traffic
         id: traffic
         uses: yi-Xu-0100/traffic-to-badge@v1.4.0
