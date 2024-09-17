@@ -12,17 +12,25 @@ func New(conf Config) *HealthCheck {
 	}
 }
 
+func (h *HealthCheck) getConcurrence() int {
+	concurrence := h.config.Concurrence
+	if concurrence == 0 {
+		concurrence = 10
+	}
+	return concurrence
+}
+
 // The main object where the Liveness and Readiness actions reside!
 type HealthCheck struct {
 	config Config
 }
 
 /*
-	Liveness function will return a status and version fields.
+Liveness function will return a status and version fields.
 
-	Used to endpoint /health-check/liveness <- optional, just a convention
-	is used only to display if you application is up and running without verify if
-	any of its integrations is OK
+Used to endpoint /health-check/liveness <- optional, just a convention
+is used only to display if you application is up and running without verify if
+any of its integrations is OK
 */
 func (h *HealthCheck) Liveness() Liveness {
 	return Liveness{
@@ -32,17 +40,18 @@ func (h *HealthCheck) Liveness() Liveness {
 }
 
 /*
-	Readiness action
+Readiness action
 
-	This function will execute all checks passed in
-	healthchecker.Config.Integrations[*].Handle functions
-	and return a detailed response
+This function will execute all checks passed in
+healthchecker.Config.Integrations[*].Handle functions
+and return a detailed response
 */
 func (h *HealthCheck) Readiness() Readiness {
 	var (
 		start     = time.Now()
 		wg        sync.WaitGroup
 		checklist = make(chan Integration, len(h.config.Integrations))
+		semaphore = make(chan struct{}, h.getConcurrence())
 		result    = Readiness{
 			Name:    h.config.Name,
 			Version: h.config.Version,
@@ -52,7 +61,7 @@ func (h *HealthCheck) Readiness() Readiness {
 	)
 	wg.Add(len(h.config.Integrations))
 	for _, v := range h.config.Integrations {
-		go step(v, &result, &wg, checklist)
+		go step(v, &result, &wg, checklist, semaphore)
 	}
 	go func() {
 		wg.Wait()
@@ -67,8 +76,9 @@ func (h *HealthCheck) Readiness() Readiness {
 }
 
 // internal function to only execute the Check.Handle function async
-func step(c Check, result *Readiness, wg *sync.WaitGroup, checklist chan Integration) {
+func step(c Check, result *Readiness, wg *sync.WaitGroup, checklist chan Integration, semaphore chan struct{}) {
 	defer (*wg).Done()
+	semaphore <- struct{}{} // reserve a spot on semaphore
 	st := time.Now()
 	validation := c.Handle()
 	check := Integration{
@@ -76,10 +86,11 @@ func step(c Check, result *Readiness, wg *sync.WaitGroup, checklist chan Integra
 		URL:          validation.URL,
 		ResponseTime: time.Since(st).Seconds(),
 		Status:       validation.Error == nil,
-		Error:        validation.Error,
 	}
 	if !check.Status {
 		result.Status = false
+		check.Error = validation.Error.Error()
 	}
 	checklist <- check
+	<-semaphore
 }
