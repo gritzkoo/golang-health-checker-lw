@@ -10,7 +10,7 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        go: ["1.18"]
+        go: ["1.23"]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -55,7 +55,7 @@ jobs:
       - name: setup go server
         uses: actions/setup-go@v1
         with:
-          go-version: "1.19"
+          go-version: "1.23"
       - name: update go.pkg.dev
         env:
           GOPROXY: https://proxy.golang.org

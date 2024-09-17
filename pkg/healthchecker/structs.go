@@ -30,7 +30,7 @@ type Integration struct {
 	URL string `json:"url"`
 	// The error passed in the CheckResponse.Error
 
-	Error error `json:"error,omitempty"`
+	Error string `json:"error,omitempty"`
 }
 
 // CheckResponse is the main struct to be used outside this package
@@ -103,6 +103,8 @@ type Config struct {
 	// You can place as many functions as you like, then this package will
 	// generate a channel and execute all of the asynchronously
 	Integrations []Check
+	// The ammount of paralel process to execut at once, default is 10
+	Concurrence int
 }
 
 // Check used to inform each integration config

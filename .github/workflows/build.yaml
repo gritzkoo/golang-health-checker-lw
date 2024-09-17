@@ -10,7 +10,7 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        go: ["1.18"]
+        go: ["1.23"]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
