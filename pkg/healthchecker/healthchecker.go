@@ -61,14 +61,17 @@ func (h *HealthCheck) Readiness() Readiness {
 	)
 	wg.Add(len(h.config.Integrations))
 	for _, v := range h.config.Integrations {
-		go step(v, &result, &wg, checklist, semaphore)
+		go step(v, &wg, checklist, semaphore)
 	}
 	go func() {
 		wg.Wait()
 		close(checklist)
-		result.Duration = time.Since(start).Seconds()
 	}()
+	result.Duration = time.Since(start).Seconds()
 	for chk := range checklist {
+		if !chk.Status {
+			result.Status = false
+		}
 		result.Integrations = append(result.Integrations, chk)
 	}
 
@@ -76,9 +79,12 @@ func (h *HealthCheck) Readiness() Readiness {
 }
 
 // internal function to only execute the Check.Handle function async
-func step(c Check, result *Readiness, wg *sync.WaitGroup, checklist chan Integration, semaphore chan struct{}) {
-	defer (*wg).Done()
+func step(c Check, wg *sync.WaitGroup, checklist chan Integration, semaphore chan struct{}) {
 	semaphore <- struct{}{} // reserve a spot on semaphore
+	defer func() {
+		wg.Done()
+		<-semaphore // release semaphore spot
+	}()
 	st := time.Now()
 	validation := c.Handle()
 	check := Integration{
@@ -88,9 +94,7 @@ func step(c Check, result *Readiness, wg *sync.WaitGroup, checklist chan Integra
 		Status:       validation.Error == nil,
 	}
 	if !check.Status {
-		result.Status = false
 		check.Error = validation.Error.Error()
 	}
 	checklist <- check
-	<-semaphore
 }

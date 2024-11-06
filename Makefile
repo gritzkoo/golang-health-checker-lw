@@ -1,5 +1,5 @@
 test:
-	go test -coverprofile=profile.cov ./...
+	go test -race -coverprofile=profile.cov ./...
 coverage: test
 	go tool cover -html=profile.cov
 build:
