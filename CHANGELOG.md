@@ -1,5 +1,14 @@
 # golang-health-checker-lw
 
+## `[1.1.1] - 2024-10-06`
+
+**_Changes_**
+
+- `healthchecker.Readiness` **_bug fix_** race conditions: the package test was not covering issues with open threads and race conditions, now the package is thread safe.
+
+
+---
+
 ## `[1.1.0] - 2024-09-16`
 
 **_Changes_**

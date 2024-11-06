@@ -6,8 +6,6 @@ import (
 	"net/http"
 	"reflect"
 	"testing"
-
-	"gopkg.in/go-playground/assert.v1"
 )
 
 type CustomError struct {
@@ -29,21 +27,6 @@ var (
 			{
 				Name:   "func 1",
 				Handle: func() CheckResponse { return CheckResponse{} },
-			},
-		},
-	}
-	configSetup4 = Config{
-		Name:    "test 1",
-		Version: "v1",
-		Integrations: []Check{
-			{
-				Name: "func 1",
-				Handle: func() CheckResponse {
-					return CheckResponse{
-						Error: errors.New("Test faild"),
-						URL:   "https://someone-has-failed.com/status",
-					}
-				},
 			},
 		},
 	}
@@ -223,7 +206,9 @@ func TestHealthCheck_Readiness(t *testing.T) {
 				config: tt.fields.config,
 			}
 			got := h.Readiness()
-			assert.Equal(t, got.Status, tt.want.Status)
+			if got.Status != tt.want.Status {
+				t.Errorf("Test Readiness() fail want: %v got: %v", tt.want.Status, got.Status)
+			}
 		})
 	}
 }
