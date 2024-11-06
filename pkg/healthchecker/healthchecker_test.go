@@ -209,7 +209,6 @@ func TestHealthCheck_Readiness(t *testing.T) {
 			if got.Status != tt.want.Status {
 				t.Errorf("Test Readiness() fail want: %v got: %v", tt.want.Status, got.Status)
 			}
-			// assert.Equal(t, got.Status, tt.want.Status)
 		})
 	}
 }
