@@ -1,15 +1,15 @@
 [
   {
-    "path": "/gritzkoo/golang-health-checker-lw",
-    "title": "gritzkoo/golang-health-checker-lw: Golang health checker package",
-    "count": 10,
-    "uniques": 7
-  },
-  {
     "path": "/gritzkoo/golang-health-checker-lw/actions/workflows/traffic2badge.yaml",
     "title": "traffic2badge · Workflow runs · gritzkoo/golang-health-checker-lw",
     "count": 5,
     "uniques": 2
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw",
+    "title": "gritzkoo/golang-health-checker-lw: Golang health checker package",
+    "count": 4,
+    "uniques": 3
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/actions/runs/15097124632",
