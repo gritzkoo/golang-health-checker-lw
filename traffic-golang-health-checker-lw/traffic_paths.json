@@ -6,16 +6,16 @@
     "uniques": 2
   },
   {
-    "path": "/gritzkoo/golang-health-checker-lw",
-    "title": "gritzkoo/golang-health-checker-lw: Golang health checker package",
-    "count": 4,
-    "uniques": 3
-  },
-  {
     "path": "/gritzkoo/golang-health-checker-lw/actions/runs/15097124632",
     "title": "traffic2badge · gritzkoo/golang-health-checker-lw@225cc56",
     "count": 4,
     "uniques": 1
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw",
+    "title": "gritzkoo/golang-health-checker-lw: Golang health checker package",
+    "count": 3,
+    "uniques": 2
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/actions",
@@ -36,12 +36,6 @@
     "uniques": 2
   },
   {
-    "path": "/gritzkoo/golang-health-checker-lw/pulls",
-    "title": "Pull requests · gritzkoo/golang-health-checker-lw",
-    "count": 2,
-    "uniques": 2
-  },
-  {
     "path": "/gritzkoo/golang-health-checker-lw/actions/runs/15097124632/job/42433272011",
     "title": "traffic2badge · gritzkoo/golang-health-checker-lw@225cc56",
     "count": 1,
@@ -56,6 +50,12 @@
   {
     "path": "/gritzkoo/golang-health-checker-lw/actions/runs/8946670759",
     "title": "traffic2badge · gritzkoo/golang-health-checker-lw@d8e81fd · GitHub",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw/actions/workflows/test.yaml",
+    "title": "test · Workflow runs · gritzkoo/golang-health-checker-lw",
     "count": 1,
     "uniques": 1
   }
