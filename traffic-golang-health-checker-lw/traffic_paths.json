@@ -1,7 +1,13 @@
 [
   {
     "path": "/gritzkoo/golang-health-checker-lw",
-    "title": "GitHub - gritzkoo/golang-health-checker-lw: Golang health checker package",
+    "title": "gritzkoo/golang-health-checker-lw: Golang health checker package",
+    "count": 3,
+    "uniques": 3
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw/tree/main/pkg/healthchecker",
+    "title": "golang-health-checker-lw/pkg/healthchecker at main · gritzkoo/golang-health-c...",
     "count": 1,
     "uniques": 1
   }
