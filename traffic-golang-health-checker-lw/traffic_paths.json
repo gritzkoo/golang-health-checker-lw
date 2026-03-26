@@ -1,13 +1,19 @@
 [
   {
+    "path": "/gritzkoo/golang-health-checker-lw/pulls",
+    "title": "Pull requests · gritzkoo/golang-health-checker-lw · GitHub",
+    "count": 2,
+    "uniques": 2
+  },
+  {
     "path": "/gritzkoo/golang-health-checker-lw",
     "title": "GitHub - gritzkoo/golang-health-checker-lw: Golang health checker package · G...",
     "count": 1,
     "uniques": 1
   },
   {
-    "path": "/gritzkoo/golang-health-checker-lw/pulls",
-    "title": "Pull requests · gritzkoo/golang-health-checker-lw · GitHub",
+    "path": "/gritzkoo/golang-health-checker-lw/issues",
+    "title": "Issues · gritzkoo/golang-health-checker-lw · GitHub",
     "count": 1,
     "uniques": 1
   }
