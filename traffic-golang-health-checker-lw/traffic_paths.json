@@ -1,61 +1,61 @@
 [
   {
     "path": "/gritzkoo/golang-health-checker-lw/pulls",
-    "title": "Pull requests · gritzkoo/golang-health-checker-lw · GitHub",
+    "title": "/pulls",
     "count": 19,
     "uniques": 19
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/issues",
-    "title": "GitHub · Where software is built",
+    "title": "/issues",
     "count": 5,
     "uniques": 4
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw",
-    "title": "gritzkoo/golang-health-checker-lw: Golang health checker package",
-    "count": 4,
-    "uniques": 1
+    "title": "Overview",
+    "count": 5,
+    "uniques": 2
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/blob/main/docs/migration-guidlines.md",
-    "title": "golang-health-checker-lw/docs at main · gritzkoo/golang-health-checker-lw",
+    "title": "/blob/main/docs/migration-guidlines.md",
     "count": 2,
     "uniques": 1
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/actions",
-    "title": "Workflow runs · gritzkoo/golang-health-checker-lw · GitHub",
+    "title": "/actions",
     "count": 1,
     "uniques": 1
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/blob/main/README.md",
-    "title": "golang-health-checker-lw/docs/migration-guidlines.md at main · gritzkoo/golan...",
+    "title": "/blob/main/README.md",
     "count": 1,
     "uniques": 1
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/compare",
-    "title": "Compare · gritzkoo/golang-health-checker-lw · GitHub",
+    "title": "/compare",
     "count": 1,
     "uniques": 1
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/milestones",
-    "title": "GitHub · Where software is built",
+    "title": "/milestones",
     "count": 1,
     "uniques": 1
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/pulse",
-    "title": "Pulse · gritzkoo/golang-health-checker-lw · GitHub",
+    "title": "/pulse",
     "count": 1,
     "uniques": 1
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/releases",
-    "title": "Releases · gritzkoo/golang-health-checker-lw",
+    "title": "/releases",
     "count": 1,
     "uniques": 1
   }
