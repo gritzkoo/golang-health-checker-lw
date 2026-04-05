@@ -2,20 +2,26 @@
   {
     "path": "/gritzkoo/golang-health-checker-lw/pulls",
     "title": "/pulls",
-    "count": 19,
-    "uniques": 19
+    "count": 188,
+    "uniques": 187
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/issues",
     "title": "/issues",
-    "count": 5,
-    "uniques": 4
+    "count": 22,
+    "uniques": 21
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw/actions",
+    "title": "/actions",
+    "count": 7,
+    "uniques": 7
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw",
     "title": "Overview",
-    "count": 5,
-    "uniques": 2
+    "count": 6,
+    "uniques": 3
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/blob/main/docs/migration-guidlines.md",
@@ -24,38 +30,32 @@
     "uniques": 1
   },
   {
-    "path": "/gritzkoo/golang-health-checker-lw/actions",
-    "title": "/actions",
+    "path": "/gritzkoo/golang-health-checker-lw/actions/caches",
+    "title": "/actions/caches",
     "count": 1,
     "uniques": 1
   },
   {
-    "path": "/gritzkoo/golang-health-checker-lw/blob/main/README.md",
-    "title": "/blob/main/README.md",
+    "path": "/gritzkoo/golang-health-checker-lw/actions/runs/22534412048",
+    "title": "/actions/runs/22534412048",
     "count": 1,
     "uniques": 1
   },
   {
-    "path": "/gritzkoo/golang-health-checker-lw/compare",
-    "title": "/compare",
+    "path": "/gritzkoo/golang-health-checker-lw/actions/runs/22534412048/workflow",
+    "title": "/actions/runs/22534412048/workflow",
     "count": 1,
     "uniques": 1
   },
   {
-    "path": "/gritzkoo/golang-health-checker-lw/milestones",
-    "title": "/milestones",
+    "path": "/gritzkoo/golang-health-checker-lw/actions/runs/22559052476",
+    "title": "/actions/runs/22559052476",
     "count": 1,
     "uniques": 1
   },
   {
-    "path": "/gritzkoo/golang-health-checker-lw/pulse",
-    "title": "/pulse",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/gritzkoo/golang-health-checker-lw/releases",
-    "title": "/releases",
+    "path": "/gritzkoo/golang-health-checker-lw/actions/runs/22559052476/workflow",
+    "title": "/actions/runs/22559052476/workflow",
     "count": 1,
     "uniques": 1
   }
