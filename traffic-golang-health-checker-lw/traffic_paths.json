@@ -2,26 +2,26 @@
   {
     "path": "/gritzkoo/golang-health-checker-lw/pulls",
     "title": "/pulls",
-    "count": 186,
-    "uniques": 185
+    "count": 170,
+    "uniques": 169
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/issues",
     "title": "/issues",
-    "count": 21,
-    "uniques": 20
-  },
-  {
-    "path": "/gritzkoo/golang-health-checker-lw/actions",
-    "title": "/actions",
-    "count": 7,
-    "uniques": 7
+    "count": 19,
+    "uniques": 18
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw",
     "title": "Overview",
     "count": 7,
     "uniques": 3
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw/actions",
+    "title": "/actions",
+    "count": 6,
+    "uniques": 6
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/blob/main/docs/migration-guidlines.md",
