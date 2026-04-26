@@ -12,6 +12,12 @@
     "uniques": 3
   },
   {
+    "path": "/gritzkoo/golang-health-checker-lw/commit/c118d64247125b8339b5b35faf2868ba8212552e",
+    "title": "/commit/c118d64247125b8339b5b35faf2868ba8212552e",
+    "count": 2,
+    "uniques": 1
+  },
+  {
     "path": "/gritzkoo/golang-health-checker-lw/blob/main/pkg/healthchecker/healthchecker.go",
     "title": "/blob/main/pkg/healthchecker/healthchecker.go",
     "count": 1,
