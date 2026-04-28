@@ -1,15 +1,21 @@
 [
   {
-    "path": "/gritzkoo/golang-health-checker-lw",
-    "title": "Overview",
-    "count": 3,
-    "uniques": 3
-  },
-  {
     "path": "/gritzkoo/golang-health-checker-lw/pulls",
     "title": "/pulls",
     "count": 3,
     "uniques": 3
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw",
+    "title": "Overview",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw/issues",
+    "title": "/issues",
+    "count": 2,
+    "uniques": 2
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/commit/c118d64247125b8339b5b35faf2868ba8212552e",
@@ -26,18 +32,6 @@
   {
     "path": "/gritzkoo/golang-health-checker-lw/blob/main/pkg/healthchecker/structs.go",
     "title": "/blob/main/pkg/healthchecker/structs.go",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/gritzkoo/golang-health-checker-lw/issues",
-    "title": "/issues",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/gritzkoo/golang-health-checker-lw/pull/2",
-    "title": "/pull/2",
     "count": 1,
     "uniques": 1
   },
