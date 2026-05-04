@@ -14,6 +14,12 @@
   {
     "path": "/gritzkoo/golang-health-checker-lw/issues",
     "title": "/issues",
+    "count": 3,
+    "uniques": 3
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw/activity",
+    "title": "/activity",
     "count": 2,
     "uniques": 2
   },
