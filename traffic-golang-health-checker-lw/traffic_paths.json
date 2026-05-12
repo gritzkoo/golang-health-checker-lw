@@ -6,16 +6,16 @@
     "uniques": 6
   },
   {
-    "path": "/gritzkoo/golang-health-checker-lw/issues",
-    "title": "/issues",
-    "count": 4,
-    "uniques": 4
-  },
-  {
     "path": "/gritzkoo/golang-health-checker-lw",
     "title": "Overview",
-    "count": 2,
-    "uniques": 2
+    "count": 3,
+    "uniques": 3
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw/issues",
+    "title": "/issues",
+    "count": 3,
+    "uniques": 3
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/activity",
