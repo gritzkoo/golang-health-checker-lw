@@ -2,20 +2,20 @@
   {
     "path": "/gritzkoo/golang-health-checker-lw/pulls",
     "title": "/pulls",
-    "count": 6,
-    "uniques": 6
-  },
-  {
-    "path": "/gritzkoo/golang-health-checker-lw",
-    "title": "Overview",
-    "count": 3,
-    "uniques": 3
+    "count": 5,
+    "uniques": 5
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/issues",
     "title": "/issues",
     "count": 3,
     "uniques": 3
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw",
+    "title": "Overview",
+    "count": 2,
+    "uniques": 2
   },
   {
     "path": "/gritzkoo/golang-health-checker-lw/activity",
