@@ -1,11 +1,5 @@
 [
   {
-    "path": "/gritzkoo/golang-health-checker-lw/pulls",
-    "title": "/pulls",
-    "count": 3,
-    "uniques": 3
-  },
-  {
     "path": "/gritzkoo/golang-health-checker-lw",
     "title": "Overview",
     "count": 2,
@@ -26,6 +20,18 @@
   {
     "path": "/gritzkoo/golang-health-checker-lw/forks",
     "title": "/forks",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw/labels",
+    "title": "/labels",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/gritzkoo/golang-health-checker-lw/pulls",
+    "title": "/pulls",
     "count": 1,
     "uniques": 1
   }
